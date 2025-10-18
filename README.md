@@ -10,6 +10,7 @@
 > [!IMPORTANT]  
 > This is where i push all the progress i made all day<sub>(even if its broken)</sub>
 
+> <sub>its also probably a brainfuck to read</sub>
 <p align="center">chromium is THICC</p>
 <p align="center">just switch to gecko righ-?</p>
 <h3 align="center">WRONG</h3>
