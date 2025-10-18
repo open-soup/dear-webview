@@ -6,6 +6,10 @@
 <a href="https://example.com">
   <img width="100" height="100" alt="Drawing sketchpad" src="https://github.com/user-attachments/assets/e5a79113-bd33-467c-a6cf-167b85dcd119" />
 </a>
+
+> [!IMPORTANT]  
+> This is where i push all the progress i made all day<sub>(even if its broken)</sub>
+
 <p align="center">chromium is THICC</p>
 <p align="center">just switch to gecko righ-?</p>
 <h3 align="center">WRONG</h3>
