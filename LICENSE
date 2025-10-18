@@ -1,0 +1,15 @@
+OPENSOUP LICENSE v1 2025
+
+You are free to:
+
+Use this software however you want — personal, commercial, whatever.
+
+Contribute back to the project; contributions are appreciated but not required.
+
+You must not:
+
+Claim you made this software or act like it’s your original work.
+
+Create “perfect forks” (copies with zero changes) just to replace the original — show some effort or improvements.
+
+Re-license this software under a different license unless you keep a visible link back to the original project and credit the original authors.
