@@ -6,12 +6,12 @@ def getcontent(htmlfile):
  file = open(htmlfile, "r")
  content = file.read()
 
-
+ 
  data = content
 
- split = data.splitlines()
+ split = data.splitlines()  #Splits data into list of lines
 
-
+#gets the content of the h1 tags
  for item in split:
   start = "<h1>"
   end = "</h1>"
