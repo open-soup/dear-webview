@@ -3,7 +3,7 @@
 
 
 <h1 align="center">Dear Webview</h1>
-<a href="https://example.com">
+<a href="https://github.com/open-soup">
   <img width="100" height="100" alt="Drawing sketchpad" src="https://github.com/user-attachments/assets/e5a79113-bd33-467c-a6cf-167b85dcd119" />
 </a>
 
