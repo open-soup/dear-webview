@@ -7,7 +7,7 @@
 > [!WARNING]  
 > If your seeing this your in the production branch no production starts until the base browser is finished please see development at [The Dear Webview Development Branch(DWDB)](https://github.com/open-soup/dear-webview/tree/development)
 
-<h1 align="center">Dear imgui</h1>
+<h1 align="center">Dear Webview</h1>
 <p align="center">chromium is THICC</p>
 <p align="center">just switch to gecko righ-?</p>
 <h3 align="center">WRONG</h3>
