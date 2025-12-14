@@ -7,6 +7,8 @@ from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QLabel
 import hashlib
 import requests
+import os
+from pathlib import Path
 
 def render():
     app = QtWidgets.QApplication([])
@@ -20,6 +22,15 @@ def render():
     # Set window icon once
     icon = QtGui.QIcon("DWDB.png")
     window.setWindowIcon(icon)
+    clearup = []
+
+    def on_close():
+        for item in clearup:
+            try:
+                os.remove(item)
+                print("[cleanup] cleanup finished")
+            except:
+                print("[cleanup] cleanup failed. :(")
 
     rendercontent = parser.getcontent("example.html")
     print(rendercontent)
@@ -41,15 +52,39 @@ def render():
             is_text = True
         elif item.endswith("/ħŧŧptimg-Đone"):
             url = item.replace("/ħŧŧptimg-Đone", "").strip()
-            url_hash = hashlib.md5(url.encode()).hexdigest()
-            r = requests.get(url)
-            with open(f"{url_hash}.jpg", "wb") as f:
-                f.write(r.content)
-            pixmap = QPixmap(f"{url_hash}.jpg")
+            if url.startswith("https://") or url.startswith("http://"):
+                localpath = False
+                url_hash = hashlib.md5(url.encode()).hexdigest()
+                filename = f"{url_hash}.jpg"
+                r = requests.get(url, stream=True)
+                total = int(r.headers.get("content-length", 0))
+                downloaded = 0
+
+                with open(f"{url_hash}.jpg", "wb") as f:
+                    for chunk in r.iter_content(chunk_size=8192):
+                        if chunk:
+                            f.write(chunk)
+                            downloaded += len(chunk)
+                            percent = int(downloaded * 100 / total) if total else 0
+                            print(f"[imgloader] loading {url_hash} {percent}%")
+            else:
+                path = Path(url)
+                print(f"[imgloader] loading {path} from local path")
+                if path.exists():
+                    localpath = True
+                    filename = url
+                else:
+                    print("urlbased image loading will be implemented here later")
+
+            if not localpath:
+                clearup.append(f"{filename}")
+            pixmap = QPixmap(f"{filename}")
             label = QLabel()
             label.setPixmap(pixmap)
             layout.addWidget(label)
+
             continue
+
 
         else:
             is_text = True
@@ -65,5 +100,6 @@ def render():
             label.setWordWrap(False)
             label.setFixedHeight(font_size + 10)
 
+    app.aboutToQuit.connect(on_close)
     window.show()
     sys.exit(app.exec())
