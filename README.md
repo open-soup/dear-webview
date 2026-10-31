@@ -1,16 +1,15 @@
-> [!WARNING]  
-> If your seeing this your in the production branch no production starts until the base browser is finished please see development at [The Dear Webview Development Branch(DWDB)](https://github.com/open-soup/dear-webview/tree/development)
+
+<img width="300" height="300" alt="e3677ea0-bfc1-4b14-93e6-2f9563eeaefd sketchpad" src="https://github.com/user-attachments/assets/06e74b6d-91da-4777-9586-8d143c32381b" />
 
 
-<img width="300" height="300" alt="Drawing(2)" src="https://github.com/user-attachments/assets/3737589a-5b20-4d91-a50f-5f3e5ad9bdd1" />
-<hr>
+<h1 align="center">Dear Webview</h1>
 <a href="https://github.com/open-soup">
   <img width="100" height="100" alt="Drawing sketchpad" src="https://github.com/user-attachments/assets/e5a79113-bd33-467c-a6cf-167b85dcd119" />
 </a>
 
+> [!IMPORTANT]  
+> This is where i push all the progress i made all day
 
-
-<h1 align="center">Dear Webview</h1>
 <p align="center">chromium is THICC</p>
 <p align="center">just switch to gecko righ-?</p>
 <h3 align="center">WRONG</h3>
@@ -36,3 +35,4 @@ workspace specs:
 ![hp laptop](https://img.shields.io/badge/hp%20laptop-0096D6?style=for-the-badge&logo=hp&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
+hi

@@ -1,0 +1,76 @@
+# =========================================
+# Python
+# =========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+
+venv/
+env/
+.venv/
+.env/
+
+
+*.env
+*.ini
+*.cfg
+*.log
+*.sqlite3
+
+
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+.DS_Store
+Thumbs.db
+
+
+*.spec
+
+# =========================================
+# Project-specific
+# =========================================
+
+
+tmp/
+cache/
+*.bak
+*.tmp
+
+
+/dist/
+build/
+output/
+
+
+# =========================================
+# OS files
+# =========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# =========================================
+# End of .gitignore
+# =========================================
